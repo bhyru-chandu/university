@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding:0;
+            margin: 0;
+        }
+        .header
+        {
+            min-height: 100vh;
+            width: 100%;
+            background-image:linear-gradient(rgba(4,9,3,0.7),rgba(4,9,3,0.7)),url(university2.jpeg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav
+        {
+            display: flex;
+            padding: 2% 2%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .link
+        {
+            flex: 1;
+            text-align: right;
+        }
+        .link ul li
+        {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .link ul li a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        .link ul li::after
+        {
+            content: '';
+            width:0;
+            height: 2px;
+            background: red;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+
+        }
+        .link ul li:hover::after
+        {
+            width: 100%;
+        }
+        .text
+        {
+            color: white;
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+
+        }
+        .text h1
+        {
+            font-size: 62px;
+        }
+        .text p
+        {
+             margin: 10px 0px 40px; 
+            font-size: 20px;
+        }
+        .cls-btn
+        {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 2px solid wheat;
+            padding: 12px 34px;
+            font-size: 20px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+
+        }
+        .cls-btn:hover
+        {
+            border: 1px solid rgb(196, 88, 20);
+            background: rgb(196, 88, 20);
+            transition: 0.5s;
+        }
+        /* --------------------------------------COURSES------------------------------------------ */
+        .courses
+        {
+
+
+
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .courses h1
+        {
+            font-size: 35px;
+            padding-bottom: 50px;
+        }   
+
+        .row
+        {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .row p
+        {
+            
+            color: rgb(160, 42, 42);
+            font-size: 14px;
+            font-weight:300 ;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .col
+        {
+            flex-basis: 31%;
+            background: rgb(221, 221, 154);
+            border-radius: 10px;
+            margin-bottom: 5px;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition:1s;
+            
+        }
+        .col:hover
+        {
+            box-shadow: 0 0 10px 0 red;
+        }
+        /* -------------------------CAMPUS--------------------------- */
+        .campus
+        {
+            padding-top: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        .camimg
+        {
+            display: flex;
+            padding-top: 50px;
+            gap: 25px;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+        }
+        .img1
+        {
+            transition: 2s;
+        }
+        .img1:hover
+        {
+            box-shadow: 0 0 15px 0 rgb(235, 39, 39);
+        }
+        /* ---------------------------------footer-------------------------------------*/
+        .footer1
+        {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            height: auto;
+            margin-top: 15px;
+            color: white;
+            background-color: rgb(56, 52, 56);
+        }
+        .footer1 h1 
+        {
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 2s;
+        }
+        .footer2
+        {
+            display: grid;
+            grid-gap: 7px;
+            
+        }
+        .footer1 h1:hover
+        {
+            color: blue;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body >
+    <div class="header">
+        <nav>
+            <h1>LOGO</h1>
+            <div class="link">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text">
+           <h1>EPSUM UNIVERSITY</h1>
+           <p>our university offers all different courses which are teaches by the top faculty</p>
+           <a href="" class="cls-btn">visit us to know more</a>
+        </div>
+    </div>
+<!-- -------------------------------COURSES-------------------------- -->
+    <section class="courses"> 
+        <h1>COURSES</h1>
+        <div class="row">
+            <div class="col">
+              <h2 >INTERMEDIATE</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ad necessitatibus porro praesentium unde, facere delectus, maiores modi eum inventore ipsa adipisci veniam laudantium quae numquam quibusdam corporis obcaecati dolorum quasi accusantium quia. Consequatur maiores, quae et deleniti labore autem aspernatur rem tempora iure similique laborum ab voluptate fuga aut?</p>
+            </div>
+            <div class="col">
+               <h2>DEGREE</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laboriosam, dolore voluptate odio dicta quae facere facilis! Harum aut quo sint illum obcaecati labore quibusdam hic officia, numquam, recusandae non error eveniet minima eius similique ullam cumque velit. Dicta quis quibusdam architecto nesciunt nobis harum sunt, iste minus officia totam?</p>
+             </div>
+            <div class="col">
+               <h2>POSTGRADUATE</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquam accusantium dolor repudiandae sunt, facilis delectus repellat doloremque at sit culpa ducimus officiis saepe doloribus alias, rem odio possimus vero cum quae laboriosam perspiciatis quaerat ipsa! Doloribus magni nihil harum optio, hic, sed, labore dignissimos repellat atque culpa dolorem blanditiis?</p>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------campus------------------------- -->
+    <section class="campus">
+        <h1>OUR CAMPUS</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae perspiciatis dolor vitae deleniti sit harum nostrum reiciendis repellendus neque!</P>
+        <div class="camimg">
+            
+        <div class="img1">
+            <img src="camp1.jpg" alt="" height="500px"  width="400px">
+            <h3>LONDON</h3>
+        </div>
+        <div class="img1">
+            <img src="camp2.jpeg" alt="" height="500px"  width="400px">
+            <h3>USA</h3>
+        </div>
+        <div class="img1">
+            <img src="camp3.jpg" alt="" height="500px"  width="400px">
+            <h3>BERLIN</h3>
+        </div>
+        </div>
+    </section>
+    <footer class="d">
+        <div class="footer1">
+            <div>
+                <h1>COMPANY</h1>
+                <div class="footer2">
+                   <p>HOME</p>
+                   <p>ABOUT US</p>
+                   <p>GALLERY</p>
+                   <p>VIDEO</p>
+                   <p>BLOG</p>
+                </div>
+            </div>
+            <div>
+                <h1>COURSES</h1>
+                <div class="footer2">
+                    <p>INTEGRATED PRELIMS CUM MAINS<br>TEST SERIES 2024 </p>
+                    <p>GS PCS FULL COURSE</p>
+                    <P>ANTHROPOLOGY OPTIONAL</P>
+                    <P>PSIR OPTIONAL</P>
+                    <P>SOCIALOGY OPTIONAL</P>
+                </div>
+            </div>
+            <div>
+                <h1>OTHER LINKS</h1>
+                <div class="footer2">
+                    <p>TERMS&CONDITIONS</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>COOKIE POLICY</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+</body>
+</html>
